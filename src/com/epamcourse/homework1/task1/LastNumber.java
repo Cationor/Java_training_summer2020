@@ -14,11 +14,11 @@ public class LastNumber {
     Scanner in = new Scanner(System.in);
 
 
-    public int enterTheNumber() {
+    public int getData() {
         System.out.print("Enter your number ");
 
         try {
-            this.number = in.nextInt();
+            number = in.nextInt();
 
         }
         catch(InputMismatchException e ) {
@@ -26,10 +26,11 @@ public class LastNumber {
             throw e;
 
         }
-         return this.number;
+         return number;
     }
 
-    public void run(int number, int degree, int divider) {
+    public void run() {
+        getData();
         System.out.printf("The last digit of the square of your number is ");
         int square = ((int) Math.pow(number, degree) % divider);
         System.out.println(square);

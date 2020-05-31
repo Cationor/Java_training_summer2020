@@ -8,21 +8,18 @@ import com.epamcourse.homework1.task5.PerfectNumber;
 public class Main {
     public static void main (String[] args){
 
-//        LastNumber lastNumber = new LastNumber();  // Task 1
-//        lastNumber.run(lastNumber.enterTheNumber(), lastNumber.degree, lastNumber.divider);
+        LastNumber lastNumber = new LastNumber();  // Task 1
+        lastNumber.run();
 
 //        LeapYear leapYear = new LeapYear(); // Task 2
-//        leapYear.enterYear();
-//        leapYear.enterMonth();
-//        leapYear.checkForLeap();
 //        leapYear.run();
 
 
 //        SquareAndCircle squareAndCircle = new SquareAndCircle(); //Task 3
 //        squareAndCircle.run();
 
-        EvenNumbers evenNumbers = new EvenNumbers(); // Task 4
-        evenNumbers.run();
+//        EvenNumbers evenNumbers = new EvenNumbers(); // Task 4
+//        evenNumbers.run();
 
 //        PerfectNumber perfectNumber = new PerfectNumber(); // Task 5
 //        perfectNumber.run();

@@ -17,53 +17,55 @@ public class LeapYear {
 
     public int enterYear() {
         System.out.println("Enter year");
-        this.year = in.nextInt();
+        year = in.nextInt();
 
-        return this.year;
+        return year;
 
     }
     public int enterMonth() {
-        Scanner in = new Scanner(System.in);
         System.out.println("Enter the month number");
-        this.monthNumber = in.nextInt();
+        monthNumber = in.nextInt();
 
-        return this.monthNumber;
+        return monthNumber;
 
     }
 
     public boolean checkForLeap() {
+        enterYear();
+        enterMonth();
 
-        if (this.year % this.HUNDRED == 0 && this.year % this.FOUR_HUNDRED == 0) {
+        if (year % HUNDRED == 0 && year % FOUR_HUNDRED == 0) {
             System.out.println("number of days per year: 366");
-            return this.leap = true;
+            return leap = true;
 
-        } else if (this.year % this.FOUR == 0 && this.year % this.HUNDRED > 0) {
+        } else if (year % FOUR == 0 && year % HUNDRED > 0) {
             System.out.println("number of days per year: 366");
-            return this.leap = true;
+            return leap = true;
 
-        } else if (this.year % this.HUNDRED == 0) {
+        } else if (year % HUNDRED == 0) {
             System.out.println("number of days per year: 365");
-            return this.leap = false;
+            return leap = false;
 
         } else {
             System.out.println("number of days per year: 365");
-            return this.leap = false;
+            return leap = false;
         }
 
     }
 
     public int run() {
+        checkForLeap();
         System.out.print("amount of days in this month: ");
 
-        if (this.leap == true) {
-        this.daysInMonth = this.leapMonth[this.monthNumber-1];
+        if (leap == true) {
+        daysInMonth = leapMonth[monthNumber-1];
             System.out.println(daysInMonth);
         }
         else {
-            this.daysInMonth = this.notLeapMonth[this.monthNumber-1];
+            daysInMonth = notLeapMonth[monthNumber-1];
             System.out.println(daysInMonth);
         }
-        return this.daysInMonth;
+        return daysInMonth;
     }
 
 

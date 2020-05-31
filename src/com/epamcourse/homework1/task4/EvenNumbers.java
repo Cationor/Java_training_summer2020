@@ -14,37 +14,38 @@ public class EvenNumbers {
 
     Scanner in = new Scanner(System.in);
 
-    public int[] getData(int a, int b, int c, int d) {
-        numbers[0] = this.A;
-        numbers[1] = this.B;
-        numbers[2] = this.C;
-        numbers[3] = this.D;
+    public int[] getData() {
+        System.out.println("enter A");
+        A = in.nextInt();
+        System.out.println("enter B");
+        B = in.nextInt();
+        System.out.println("enter C");
+        C = in.nextInt();
+        System.out.println("enter D");
+        D = in.nextInt();
+        numbers[0] = A;
+        numbers[1] = B;
+        numbers[2] = C;
+        numbers[3] = D;
         return numbers;
     }
 
     public int checkEven() {
+        getData();
         for (int i = 0; i < 4; i++) {
-            if (getData(A, B, C, D)[i] % 2 == 0) {
-                this.numberOfEven++;
+            if (numbers[i] % 2 == 0) {
+                numberOfEven++;
             }
         }
-        return numberOfEven; //убрать this
+        return numberOfEven;
     }
 
     public void run() {
-        System.out.println("enter A");
-        this.A = in.nextInt();
-        System.out.println("enter B");
-        this.B = in.nextInt();
-        System.out.println("enter C");
-        this.C = in.nextInt();
-        System.out.println("enter D");
-        this.D = in.nextInt();
-        if (this.checkEven() >= 2) {
-            this.flag = true;
-            System.out.println(this.flag);
+        if (checkEven() >= 2) {
+            flag = true;
+            System.out.println(flag);
         } else {
-            System.out.println(this.flag);
+            System.out.println(flag);
         }
     }
 }

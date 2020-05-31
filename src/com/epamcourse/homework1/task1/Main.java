@@ -19,7 +19,6 @@ public class Main {
 
 
 //        SquareAndCircle squareAndCircle = new SquareAndCircle(); //Task 3
-//        squareAndCircle.getData();
 //        squareAndCircle.run();
 
         EvenNumbers evenNumbers = new EvenNumbers(); // Task 4

@@ -2,7 +2,7 @@ package com.epamcourse.homework1.task6;
 
 import java.util.Scanner;
 
-public class Second {
+public class Seconds {
     public double second;
     public double sixty = 60; // Эти 60 нам помогут приводить секунды к часам, минутам
     public double threeThousandSixHundred = sixty*sixty;

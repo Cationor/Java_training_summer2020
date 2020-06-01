@@ -2,6 +2,7 @@ package com.epamcourse.homework1.task1;
 import com.epamcourse.homework1.task6.Seconds;
 import com.epamcourse.homework1.task7.TwoPoints;
 import com.epamcourse.homework1.task8.Function;
+import com.epamcourse.homework1.task9.LengthAndAreaOfCircle;
 
 public class Main {
     public static void main (String[] args){
@@ -28,8 +29,11 @@ public class Main {
 //        TwoPoints twoPoints = new TwoPoints();
 //        twoPoints.run();
 
-        Function function = new Function();
-        function.run();
+//        Function function = new Function();
+//        function.run();
+
+        LengthAndAreaOfCircle lengthAndAreaOfCircle = new LengthAndAreaOfCircle();
+        lengthAndAreaOfCircle.run();
 
     }
 }

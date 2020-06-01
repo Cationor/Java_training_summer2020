@@ -1,6 +1,7 @@
 package com.epamcourse.homework1.task1;
 import com.epamcourse.homework1.task6.Seconds;
 import com.epamcourse.homework1.task7.TwoPoints;
+import com.epamcourse.homework1.task8.Function;
 
 public class Main {
     public static void main (String[] args){
@@ -24,8 +25,11 @@ public class Main {
 //        Seconds second = new Seconds();
 //        second.run();
 
-        TwoPoints twoPoints = new TwoPoints();
-        twoPoints.run();
+//        TwoPoints twoPoints = new TwoPoints();
+//        twoPoints.run();
+
+        Function function = new Function();
+        function.run();
 
     }
 }

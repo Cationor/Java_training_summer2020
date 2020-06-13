@@ -40,12 +40,10 @@ public class ArithmeticService {
         long index = 1;
         boolean result = false;
 
-        /* not even numbers can't be perfect */
         if (number % 2 != 0) {
             return false;
         }
-        /* this number is not calculated using the formula
-        below, i.e. it is special */
+
         if (number == FIRST_PERFECT_NUMBER){
             return true;
         }
